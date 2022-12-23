@@ -56,7 +56,6 @@ namespace WpfChords
 
             Play(PathFile);                         // воспроизведение
         }
-
         public ArrayList ConvertToFile(string[] ListChords)
         {
             ArrayList StringFilesName = new ArrayList(20);  // создание пйтей к файлам в зависоимости от введенной строки
