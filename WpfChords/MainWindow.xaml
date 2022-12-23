@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfChords.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfChords"
+        mc:Ignorable="d"
+        Title="Проигрыватель аккордов" Height="550" Width="950" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Label Content="Введите последовательность из допустимых аккордов" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="23"/>
+            <Image Height="35" Width="596" Name="ImageChord" Source="Image/img.png" Margin="10"/>
+            <TextBox x:Name="StringCh" Margin="10" Height="169" TextWrapping="Wrap" Text="Am C G Em" Width="596" FontFamily="Arial Black" FontSize="16" PreviewTextInput="StringCh_PreviewTextInput"/>
+            <Button Background ="#bbccbb" Margin="10" Content="Проиграть" Height="39" Width="163" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
